@@ -35,7 +35,8 @@ const Register = (props) => {
   return (
     <div className="form-container">
       <Form onSubmit={onSubmit} noValidate className={loading ? "loading" : ""}>
-        <h1>Register</h1>
+        <h1>{props.header}</h1>
+        <p>{props.tagline}</p>
         <Form.Input
           type="text"
           label="username"
@@ -72,7 +73,7 @@ const Register = (props) => {
           error={errors.confirmPassword ? true : false}
           onChange={onChange}
         />
-        <Button type="submit" color="teal">
+        <Button type="submit" color="vk">
           register
         </Button>
       </Form>

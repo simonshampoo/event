@@ -32,7 +32,6 @@ const Login = (props) => {
   return (
     <div className="form-container">
       <Form onSubmit={onSubmit} noValidate className={loading ? "loading" : ""}>
-        <h1>login</h1>
         <Form.Input
           type="text"
           label="username"
@@ -51,7 +50,7 @@ const Login = (props) => {
           error={errors.password ? true : false}
           onChange={onChange}
         />
-        <Button type="submit" color="teal">
+        <Button type="submit" color="vk">
           login
         </Button>
       </Form>
